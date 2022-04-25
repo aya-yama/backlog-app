@@ -40,32 +40,34 @@ export const App = () => {
         />
         <button onClick={onClickAdd}>追加</button>
       </div>
-      <div className="incomplete-area">
-        <p className="title">TODO</p>
-        <ul>
-          {incompleteTodos.map((todo, index) => {
-            return (
-              <div key={todo} className="list-row">
-                <li>{todo}</li>
-                <button onClick={() => onClickComplete(index)}>完了</button>
-                <button onClick={() => onClickDelete(index)}>削除</button>
-              </div>
-            );
-          })}
-        </ul>
-      </div>
-      <div className="complete-area">
-        <p className="title">DOING</p>
-        <ul>
-          {completeTodos.map((todo) => {
-            return (
-              <div className="list-row">
-                <li>{todo}</li>
-                <button>戻す</button>
-              </div>
-            );
-          })}
-        </ul>
+      <div className="backlog1">
+        <div className="incomplete-area">
+          <p className="title">TODO</p>
+          <ul>
+            {incompleteTodos.map((todo, index) => {
+              return (
+                <div key={todo} className="list-row">
+                  <li>{todo}</li>
+                  <button onClick={() => onClickComplete(index)}>完了</button>
+                  <button onClick={() => onClickDelete(index)}>削除</button>
+                </div>
+              );
+            })}
+          </ul>
+        </div>
+        <div className="complete-area">
+          <p className="title">DOING</p>
+          <ul>
+            {completeTodos.map((todo) => {
+              return (
+                <div className="list-row">
+                  <li>{todo}</li>
+                  <button>戻す</button>
+                </div>
+              );
+            })}
+          </ul>
+        </div>
       </div>
     </>
   );
