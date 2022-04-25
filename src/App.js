@@ -34,14 +34,14 @@ export const App = () => {
     <>
       <div className="input-area">
         <input
-          placeholder="TODOを入力"
+          placeholder="バックログを入力"
           value={todoText}
           onChange={onChangeTodoText}
         />
         <button onClick={onClickAdd}>追加</button>
       </div>
       <div className="incomplete-area">
-        <p className="title">未完了のTODO</p>
+        <p className="title">TODO</p>
         <ul>
           {incompleteTodos.map((todo, index) => {
             return (
@@ -55,7 +55,7 @@ export const App = () => {
         </ul>
       </div>
       <div className="complete-area">
-        <p className="title">完了のTODO</p>
+        <p className="title">DOING</p>
         <ul>
           {completeTodos.map((todo) => {
             return (
