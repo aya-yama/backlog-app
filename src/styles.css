@@ -34,19 +34,28 @@ li {
   border-radius: 8px;
 }
 
-.incomplete-area {
+.todo-area {
   background-color: #c6ffe2;
   width: 400px;
-  min-height: 200px;
+  height: 400px;
   padding: 8px;
   margin: 8px;
   border-radius: 8px;
 }
 
-.complete-area {
+.doing-area {
   background-color: #ffffe0;
   width: 400px;
-  min-height: 200px;
+  height: 400px;
+  padding: 8px;
+  margin: 8px;
+  border-radius: 8px;
+}
+
+.done-area {
+  background-color: #c1ffff;
+  width: 400px;
+  height: 400px;
   padding: 8px;
   margin: 8px;
   border-radius: 8px;
