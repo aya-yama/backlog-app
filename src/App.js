@@ -60,9 +60,11 @@ export const App = () => {
           placeholder="バックログを入力"
           value={todoText}
           onChange={onChangeTodoText}
+          disabled={todoLogs.length >= 25}
         />
         <button onClick={onClickAdd}>追加</button>
       </div>
+      {todoLogs.length >= 25 && <p>登録できるバックログは２５個までです</p>}
       <div className="backlog1">
         <div className="todo-area">
           <p className="title">TODO</p>
