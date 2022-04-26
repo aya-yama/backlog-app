@@ -4,7 +4,7 @@ import "./styles.css";
 //　コメント
 export const App = () => {
   const [todoText, setTodoText] = useState("");
-  //// const [incompleteTodos, setIncompleteTodos] = useState([]);
+  ////// const [incompleteTodos, setIncompleteTodos] = useState([]);
   //// const [completeTodos, setCompleteTodos] = useState([]);
   const [todoLogs, setTodoLogs] = useState([]);
   const [doingLogs, setDoingLogs] = useState([]);
