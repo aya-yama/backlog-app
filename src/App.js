@@ -83,8 +83,8 @@ export const App = () => {
           <ul>
             {doingLogs.map((todo, index) => {
               return (
-                <div className="list-row">
-                  <li>{doingLogs}</li>
+                <div key={todo} div className="list-row">
+                  <li>{todo}</li>
                   <button onClick={() => onClickComplete(index)}>完了</button>
                   <button onClick={() => onClickBack(index)}>戻す</button>
                 </div>
@@ -97,8 +97,8 @@ export const App = () => {
           <ul>
             {doneLogs.map((todo) => {
               return (
-                <div className="list-row">
-                  <li>{doneLogs}</li>
+                <div key={todo} div className="list-row">
+                  <li>{todo}</li>
                 </div>
               );
             })}
