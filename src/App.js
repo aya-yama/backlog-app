@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./styles.css";
 
+//　コメント
 export const App = () => {
   const [todoText, setTodoText] = useState("");
   //// const [incompleteTodos, setIncompleteTodos] = useState([]);
