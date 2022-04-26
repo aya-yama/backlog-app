@@ -37,7 +37,7 @@ li {
 .todo-area {
   background-color: #c6ffe2;
   width: 400px;
-  height: 400px;
+  min-height: 550px;
   padding: 8px;
   margin: 8px;
   border-radius: 8px;
@@ -46,7 +46,7 @@ li {
 .doing-area {
   background-color: #ffffe0;
   width: 400px;
-  height: 400px;
+  min-height: 550px;
   padding: 8px;
   margin: 8px;
   border-radius: 8px;
@@ -55,7 +55,7 @@ li {
 .done-area {
   background-color: #c1ffff;
   width: 400px;
-  height: 400px;
+  min-height: 550px;
   padding: 8px;
   margin: 8px;
   border-radius: 8px;
