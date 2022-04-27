@@ -60,18 +60,18 @@ export const App = () => {
           placeholder="バックログを入力"
           value={todoText}
           onChange={onChangeTodoText}
-          disabled={todoLogs.length >= 25}
+          disabled={todoLogs.length >= 3}
         />
         <button onClick={onClickAdd}>追加</button>
       </div>
-      {todoLogs.length >= 25 && <p>登録できるバックログは２５個までです</p>}
+      {todoLogs.length >= 3 && <p>登録できるバックログは3個までです</p>}
       <div className="backlog1">
         <div className="todo-area">
           <p className="title">TODO</p>
           <ul>
             {todoLogs.map((todo, index) => {
               return (
-                <div key={todo} className="list-row">
+                <div key={todo.id} className="list-row">
                   <li>{todo}</li>
                   <button onClick={() => onClickStart(index)}>着手</button>
                   <button onClick={() => onClickDelete(index)}>削除</button>
@@ -85,7 +85,7 @@ export const App = () => {
           <ul>
             {doingLogs.map((todo, index) => {
               return (
-                <div key={todo} div className="list-row">
+                <div key={todo.id} div className="list-row">
                   <li>{todo}</li>
                   <button onClick={() => onClickComplete(index)}>完了</button>
                   <button onClick={() => onClickBack(index)}>戻す</button>
@@ -99,7 +99,7 @@ export const App = () => {
           <ul>
             {doneLogs.map((todo) => {
               return (
-                <div key={todo} div className="list-row">
+                <div key={todo.id} div className="list-row">
                   <li>{todo}</li>
                 </div>
               );
